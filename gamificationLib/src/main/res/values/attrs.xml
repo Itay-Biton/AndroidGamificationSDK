@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemPlayerView">
+        <!-- Background -->
+        <attr name="rankBackground" format="reference|color" />
+        <attr name="usernameBackground" format="reference|color" />
+        <attr name="pointsBackground" format="reference|color" />
+
+        <!-- Text Colors -->
+        <attr name="rankTextColor" format="color" />
+        <attr name="usernameTextColor" format="color" />
+        <attr name="pointsTextColor" format="color" />
+
+        <!-- Text Sizes -->
+        <attr name="rankTextSize" format="dimension" />
+        <attr name="usernameTextSize" format="dimension" />
+        <attr name="pointsTextSize" format="dimension" />
+    </declare-styleable>
+</resources>
