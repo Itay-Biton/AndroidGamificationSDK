@@ -2,6 +2,7 @@
 
 **The Android Gamification SDK** is a powerful tool designed to help developers integrate player and achievement management into their Android applications. This SDK provides a comprehensive set of functions to manage players, track achievements, and display leaderboards and player ranks. It also includes built-in UI components for seamless integration into your app.
 
+If you prefer to interact with the backend API directly without using the SDK, you can refer to the detailed API documentation available at WWW.API-SITE.com. The API site provides comprehensive information about all available endpoints, request/response schemas, and authentication requirements.
 ---
 
 ## Features
@@ -215,22 +216,10 @@ An example app demonstrating the usage of this SDK will be provided soon. Stay t
 
 ## Contact
 
-If you have any questions or need assistance, feel free to reach out to us at [itaybit10@gmail.com](mailto:itaybit10@gmail.com).
-
----
-
-## License and Copyright
-
-© 2025 Gamification SDK. All rights reserved.
-
-This SDK is owned by Gamification SDK. Any unauthorized reproduction, modification, distribution, or use of this SDK, in whole or in part, is strictly prohibited without explicit permission from the author.
-
-For academic purposes or personal review, please ensure proper credit is given to Gamification SDK, and include a link to the original repository.
-
-This SDK is intended for portfolio demonstration purposes only and must not be duplicated or repurposed without permission. If you're interested in collaborating or using parts of this SDK for educational reasons, please contact us directly.
+If you have any questions or need assistance, feel free to reach out to me at [itaybit10@gmail.com](mailto:itaybit10@gmail.com).
 
 ---
 
 ## Note to Recruiters
 
-Please note that this SDK is part of our professional portfolio and should not be copied or reused. If you’re interested in our work or would like to discuss potential job opportunities, feel free to reach out via the provided email. We are open to exploring new projects and opportunities.
+Please note that this SDK is part of my professional portfolio. If you’re interested in my work or would like to discuss potential job opportunities, feel free to reach out via the provided email. I am open to exploring new projects and opportunities.
