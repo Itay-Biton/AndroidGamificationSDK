@@ -215,7 +215,7 @@ An example app demonstrating the usage of this SDK will be provided soon. Stay t
 
 ## Contact
 
-If you have any questions or need assistance, feel free to reach out to us at [support@gamificationsdk.com](mailto:support@gamificationsdk.com).
+If you have any questions or need assistance, feel free to reach out to us at [itaybit10@gmail.com](mailto:itaybit10@gmail.com).
 
 ---
 
