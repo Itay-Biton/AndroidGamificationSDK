@@ -1,6 +1,6 @@
-# Android SDK for Gamification
+# Android Gamification SDK
 
-**Android SDK for Gamification** is a powerful tool designed to help developers integrate player and achievement management into their Android applications. This SDK provides a comprehensive set of functions to manage players, track achievements, and display leaderboards and player ranks. It also includes built-in UI components for seamless integration into your app.
+**The Android Gamification SDK** is a powerful tool designed to help developers integrate player and achievement management into their Android applications. This SDK provides a comprehensive set of functions to manage players, track achievements, and display leaderboards and player ranks. It also includes built-in UI components for seamless integration into your app.
 
 ---
 
@@ -207,7 +207,7 @@
 
 ---
 
-## Example App (Placeholder)
+## Example App
 
 An example app demonstrating the usage of this SDK will be provided soon. Stay tuned for updates!
 
