@@ -2,7 +2,7 @@
 
 **The Android Gamification SDK** is a powerful tool designed to help developers integrate player and achievement management into their Android applications. This SDK provides a comprehensive set of functions to manage players, track achievements, and display leaderboards and player ranks. It also includes built-in UI components for seamless integration into your app.
 
-If you prefer to interact with the backend API directly without using the SDK, you can refer to the detailed API documentation available [HERE](https://gamificationsdk-server.onrender.com/about). The API site provides comprehensive information about all available endpoints, request/response schemas, and authentication requirements.
+If you prefer to interact with the backend API directly without using the SDK, you can refer to the detailed API documentation available [HERE](https://gamificationapi-server.onrender.com/about). The API site provides comprehensive information about all available endpoints, request/response schemas, and authentication requirements.
 
 ---
 
@@ -50,10 +50,28 @@ If you prefer to interact with the backend API directly without using the SDK, y
 **To integrate the SDK into your Android project:**
 
 1. **Add the SDK dependency**:
-   Add the following dependency to your `build.gradle` file:
-   ```gradle
-   implementation 'com.example:gamification-sdk:1.0.0'
-   ```
+   Ensure that your project is configured to fetch the library from JitPack. Update your **`settings.gradle`** and **`build.gradle`** as follows:
+      #### **`settings.gradle`**
+      ```kotlin
+      dependencyResolutionManagement {
+          repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+          repositories {
+              google()
+              mavenCentral()
+              maven {
+                  url = uri("https://jitpack.io")
+              }
+          }
+      }
+      ```   
+   #### **`build.gradle` (App Module)**
+      Add the library dependency to your app module's dependencies block:
+      ```kotlin
+      dependencies {
+          implementation("com.github.Itay-Biton:AndroidGamificationSDK:1.0.0")
+      }
+      ```
+   Sync your Gradle project after adding these changes.
 
 2. **Initialize the SDK**:
    In your `Application` class or `MainActivity`, initialize the SDK with your app ID and API key:
@@ -209,9 +227,9 @@ If you prefer to interact with the backend API directly without using the SDK, y
 
 ---
 
-## Example App
+### License
 
-An example app demonstrating the usage of this SDK will be provided soon. Stay tuned for updates!
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
