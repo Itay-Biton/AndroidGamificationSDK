@@ -2,7 +2,7 @@
 
 **The Android Gamification SDK** is a powerful tool designed to help developers integrate player and achievement management into their Android applications. This SDK provides a comprehensive set of functions to manage players, track achievements, and display leaderboards and player ranks. It also includes built-in UI components for seamless integration into your app.
 
-If you prefer to interact with the backend API directly without using the SDK, you can refer to the detailed API documentation available [HERE](https://gamificationsdk-server.onrender.com/about). The API site provides comprehensive information about all available endpoints, request/response schemas, and authentication requirements.
+If you prefer to interact with the backend API directly without using the SDK, you can refer to the detailed API documentation available [HERE](https://gamificationapi-server.onrender.com/about). The API site provides comprehensive information about all available endpoints, request/response schemas, and authentication requirements.
 
 ---
 
@@ -209,9 +209,9 @@ If you prefer to interact with the backend API directly without using the SDK, y
 
 ---
 
-## Example App
+### License
 
-An example app demonstrating the usage of this SDK will be provided soon. Stay tuned for updates!
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
 ---
 
