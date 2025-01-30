@@ -68,7 +68,7 @@ If you prefer to interact with the backend API directly without using the SDK, y
       Add the library dependency to your app module's dependencies block:
       ```kotlin
       dependencies {
-          implementation("com.github.ItayBiton:AndroidGamificationSDK:v1.0.0")
+          implementation("com.github.Itay-Biton:AndroidGamificationSDK:1.0.0")
       }
       ```
    Sync your Gradle project after adding these changes.
