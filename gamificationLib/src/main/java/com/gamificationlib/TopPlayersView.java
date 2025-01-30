@@ -1,18 +1,16 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.graphics.Rect;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import androidx.annotation.Nullable;
+
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.gamificationlib.models.Player;
+import com.gamificationlib.models.Player;
 
 import java.util.List;
 

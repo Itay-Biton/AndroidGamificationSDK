@@ -1,4 +1,4 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
 import org.junit.Test;
 

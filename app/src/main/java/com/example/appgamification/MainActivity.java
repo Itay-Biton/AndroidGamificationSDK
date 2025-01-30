@@ -2,7 +2,6 @@ package com.example.appgamification;
 
 import android.graphics.Color;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -13,14 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.appgamification.databinding.ActivityMainBinding;
-import com.example.gamificationlib.ApiController;
-import com.example.gamificationlib.PlayerRankView;
-import com.example.gamificationlib.TopPlayersView;
-import com.example.gamificationlib.models.Achievement;
-import com.example.gamificationlib.models.Player;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.gamificationlib.ApiController;
+import com.gamificationlib.PlayerRankView;
+import com.gamificationlib.TopPlayersView;
 
 public class MainActivity extends AppCompatActivity {
 

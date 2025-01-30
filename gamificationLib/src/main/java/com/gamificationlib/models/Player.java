@@ -1,4 +1,4 @@
-package com.example.gamificationlib.models;
+package com.gamificationlib.models;
 
 import java.util.List;
 

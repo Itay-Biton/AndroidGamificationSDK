@@ -1,4 +1,4 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,7 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.gamificationlib.models.Player;
+import com.gamificationlib.models.Player;
 
 
 public class PlayerRankView extends LinearLayout {

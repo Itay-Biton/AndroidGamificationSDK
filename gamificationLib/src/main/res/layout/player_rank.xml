@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <com.example.gamificationlib.ItemPlayerView
+    <com.gamificationlib.ItemPlayerView
         android:id="@+id/item_player_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

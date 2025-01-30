@@ -1,11 +1,11 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.gamificationlib.models.Player;
+import com.gamificationlib.models.Player;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
-import com.example.gamificationlib.models.Achievement;
-import com.example.gamificationlib.models.Player;
+import com.gamificationlib.models.Achievement;
+import com.gamificationlib.models.Player;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -19,7 +19,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiController {
 
-    private static final String BASE_URL = "https://gamificationsdk-server.onrender.com/";
+    private static final String BASE_URL = "https://gamificationapi-server.onrender.com/";
 
     private static CallBack_Players callBackPlayers;
     private static CallBack_Player callBackPlayer;
@@ -66,11 +66,6 @@ public class ApiController {
 
     private static void setCallBackInteger(CallBack_Integer newCallBackInteger) {
         callBackInteger = newCallBackInteger;
-    }
-
-    public ApiController(String appID, String apiKey) {
-        //APP_ID = appID;
-        //API_KEY = apiKey;
     }
 
     private static ApiService getAPI() {

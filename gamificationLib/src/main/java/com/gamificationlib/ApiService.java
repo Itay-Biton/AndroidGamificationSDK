@@ -1,7 +1,7 @@
-package com.example.gamificationlib;
+package com.gamificationlib;
 
-import com.example.gamificationlib.models.Achievement;
-import com.example.gamificationlib.models.Player;
+import com.gamificationlib.models.Achievement;
+import com.gamificationlib.models.Player;
 
 import java.util.List;
 
