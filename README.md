@@ -50,10 +50,28 @@ If you prefer to interact with the backend API directly without using the SDK, y
 **To integrate the SDK into your Android project:**
 
 1. **Add the SDK dependency**:
-   Add the following dependency to your `build.gradle` file:
-   ```gradle
-   implementation 'com.example:gamification-sdk:1.0.0'
-   ```
+   Ensure that your project is configured to fetch the library from JitPack. Update your **`settings.gradle`** and **`build.gradle`** as follows:
+      #### **`settings.gradle`**
+      ```kotlin
+      dependencyResolutionManagement {
+          repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+          repositories {
+              google()
+              mavenCentral()
+              maven {
+                  url = uri("https://jitpack.io")
+              }
+          }
+      }
+      ```   
+   #### **`build.gradle` (App Module)**
+      Add the library dependency to your app module's dependencies block:
+      ```kotlin
+      dependencies {
+          implementation("com.github.ItayBiton:AndroidGamificationSDK:v1.0.0")
+      }
+      ```
+   Sync your Gradle project after adding these changes.
 
 2. **Initialize the SDK**:
    In your `Application` class or `MainActivity`, initialize the SDK with your app ID and API key:
