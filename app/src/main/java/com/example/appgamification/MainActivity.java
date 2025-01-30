@@ -2,6 +2,7 @@ package com.example.appgamification;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -15,6 +16,11 @@ import com.example.appgamification.databinding.ActivityMainBinding;
 import com.gamificationlib.ApiController;
 import com.gamificationlib.PlayerRankView;
 import com.gamificationlib.TopPlayersView;
+import com.gamificationlib.models.Achievement;
+import com.gamificationlib.models.Player;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,7 +51,11 @@ public class MainActivity extends AppCompatActivity {
         // Example setup information
         ApiController.setup("678bb0bb863b57a955392452", "678bb091863b57a95539244b");
 
+        // How to change attributes:
         playerRankView.getItemPlayerView().setPointsTextColor(Color.RED);
+        playerRankView.getItemPlayerView().setRankBackground(Color.YELLOW);
+
+
     }
 
     private void refreshUI() {
@@ -62,6 +72,51 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                     playerRankView.setVisibility(View.GONE);
+            }
+
+            @Override
+            public void failed(String message) {
+
+            }
+        });
+    }
+
+    private void exampleUsage() {
+        Player newplayer = new Player(
+                "your_unique_id",
+                "John Doe",
+                42,
+                new ArrayList<>()
+        );
+
+        ApiController.createPlayer(newplayer, new ApiController.CallBack_Player() {
+            @Override
+            public void ready(Player player) {
+                Log.d("pttt", player.getUsername());
+            }
+
+            @Override
+            public void failed(String message) {
+
+            }
+        });
+
+        ApiController.fetchAllAchievements(new ApiController.CallBack_Achievements() {
+            @Override
+            public void ready(List<Achievement> achievements) {
+                if (!achievements.isEmpty()) {
+                    ApiController.addAchievementToPlayer("your_unique_id", achievements.get(0).getAchievementID(), new ApiController.CallBack_Player() {
+                        @Override
+                        public void ready(Player player) {
+                            Log.d("pttt", "added " + achievements.get(0).getTitle() + " achievement to user " + player.getUsername());
+                        }
+
+                        @Override
+                        public void failed(String message) {
+
+                        }
+                    });
+                }
             }
 
             @Override
