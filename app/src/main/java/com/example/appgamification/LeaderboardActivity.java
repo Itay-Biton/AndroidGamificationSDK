@@ -5,11 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import com.gamificationlib.PlayerRankView;
 import com.gamificationlib.TopPlayersView;
@@ -32,7 +28,7 @@ public class LeaderboardActivity extends AppCompatActivity {
         playerRankView.fetchPlayerRank(PlayerManager.getInstance().getPlayer().getPlayerID());
 
         playerRankView.getItemPlayerView().setPointsTextSize(32);
-        playerRankView.getItemPlayerView().setUsernameBackground(Color.GRAY);
+        playerRankView.getItemPlayerView().setUsernameBackground(Color.LTGRAY);
         playerRankView.getItemPlayerView().setRankTextColor(Color.RED);
 
         // Back button functionality

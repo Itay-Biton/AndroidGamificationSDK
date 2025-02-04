@@ -167,16 +167,22 @@ public class ApiController {
         Call<Boolean> call = getAPI().checkPlayerAchievement(API_KEY, APP_ID, playerID, achievementID);
         call.enqueue(booleanCallback);
     }
-    public static void getAchievementByPoints(int points, CallBack_Achievement callBackAchievement) {
+    public static void fetchAchievementByPoints(int points, CallBack_Achievement callBackAchievement) {
         if (points < 0 || callBackAchievement == null) return;
         setCallBackAchievement(callBackAchievement);
         Call<Achievement> call = getAPI().getAchievementByPoints(API_KEY, APP_ID, points);
         call.enqueue(achievementCallback);
     }
-    public static void getAchievementByTitle(String title, CallBack_Achievement callBackAchievement) {
+    public static void fetchAchievementByTitle(String title, CallBack_Achievement callBackAchievement) {
         if (title == null || title.isEmpty() || callBackAchievement == null) return;
         setCallBackAchievement(callBackAchievement);
         Call<Achievement> call = getAPI().getAchievementByTitle(API_KEY, APP_ID, title);
+        call.enqueue(achievementCallback);
+    }
+    public static void fetchAchievementByID(String id, CallBack_Achievement callBackAchievement) {
+        if (id == null || id.isEmpty() || callBackAchievement == null) return;
+        setCallBackAchievement(callBackAchievement);
+        Call<Achievement> call = getAPI().getAchievementByID(API_KEY, APP_ID, id);
         call.enqueue(achievementCallback);
     }
     public static void addAchievementToPlayer(String playerID, String achievementID, CallBack_Player callBackPlayer) {

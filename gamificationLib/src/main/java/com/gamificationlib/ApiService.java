@@ -136,6 +136,13 @@ public interface ApiService {
             @Path("appID") String appID,
             @Path("title") String title
     );
+    // Get achievement by title
+    @GET("achievements/{appID}/id={id}")
+    Call<Achievement> getAchievementByID(
+            @Header("api_key") String apiKey,
+            @Path("appID") String appID,
+            @Path("id") String id
+    );
     // Add achievement to player
     @PUT("achievements/{appID}/player={playerID}/achievement={achievementID}/add")
     Call<Player> addAchievementToPlayer(
