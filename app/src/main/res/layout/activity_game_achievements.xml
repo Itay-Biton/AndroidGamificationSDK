@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".GameAchievementsActivity">
 
-    <!-- Top Players View -->
-    <com.gamificationlib.TopPlayersView
-        android:id="@+id/topPlayersView"
+    <TextView
+        android:id="@+id/tvGameAchievements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Achievements"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gameAchievementsRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
 
-    <!-- Player Rank View -->
-    <com.gamificationlib.PlayerRankView
-        android:id="@+id/playerRankView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <!-- Back Button -->
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
@@ -28,5 +29,4 @@
         android:text="Back"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp" />
-
 </LinearLayout>

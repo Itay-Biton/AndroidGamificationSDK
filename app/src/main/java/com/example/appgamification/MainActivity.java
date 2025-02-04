@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        refresh = binding.refreshBtn;
+        refresh = binding.btnBack;
         refresh.setOnClickListener(v -> refreshUI());
         topPlayersView = binding.topPlayersView;
         playerRankView = binding.playerRankView;

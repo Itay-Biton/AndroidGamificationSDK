@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".LeaderboardActivity">
 
     <!-- Top Players View -->
     <com.gamificationlib.TopPlayersView
@@ -18,7 +18,8 @@
     <com.gamificationlib.PlayerRankView
         android:id="@+id/playerRankView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
 
     <!-- Back Button -->
     <Button
